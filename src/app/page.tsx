@@ -23,22 +23,22 @@ export default function Home() {
             background: 'linear-gradient(90deg, #FFF 0%, #FFCFB4 27.08%, #E5BBFF 65.10%, #BCC3FF 88.54%, #BDEFFF 100%)'     
           }}
         >
-          <span className='z-50 text-5xl font-thin whitespace-nowrap tracking-widest mix-blend-difference'>
+          <span className='z-50 text-2xl md:text-4xl lg:text-5xl font-thin whitespace-nowrap tracking-widest mix-blend-difference'>
             WEB INTEL UNLEASHED
           </span>
-          <span className='z-50 text-xl whitespace-nowrap tracking-widest mix-blend-difference'>
+          <span className='z-50 text-sm md:text-base lg:text-xl md:whitespace-nowrap tracking-widest mix-blend-difference'>
            Gather Vast Public Data, Top Web Scraping & Proxy Network
           </span>
          <div className='absolute top-1/3 left-0 h-64 w-64 rounded-full bg-white/10 backdrop-blur-sm border border-white/20'></div> 
         </div>
       </div>
       <div className='flex flex-col items-center justify-center gap-4 pb-24'>
-        <span className=''>
+        <span className='text-sm md:text-base'>
           WE HAVE BEEN MENTIONED ON 1000+ SITES
         </span>
-        <div className='flex gap-12 items-center justify-center'>
+        <div className='flex gap-4 md:gap-8 lg:gap-12 items-center justify-center'>
           {logos.map((logo, index) => (
-            <div key={index} className='w-24'>
+            <div key={index} className='w-14 md:w-24'>
               <Image
                 src={logo}
                 alt="company logo"
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </div>
       <div className='w-screen flex justify-center items-center relative' id='api'>
-        <div className='w-full max-w-3xl -mt-72 aspect-square rounded-full text-center flex flex-col items-center justify-center gap-4 pt-12 -z-50 absolute mx-auto top-1/2 opacity-20'
+        <div className='w-full mx-2 md:max-w-3xl -mt-72 aspect-square rounded-full text-center flex flex-col items-center justify-center gap-4 pt-12 -z-50 absolute md:mx-auto top-1/2 opacity-20'
             style={{
               background: 'linear-gradient(90deg, #FFF 0%, #FFCFB4 27.08%, #E5BBFF 65.10%, #BCC3FF 88.54%, #BDEFFF 100%)'     
             }}
@@ -59,29 +59,29 @@ export default function Home() {
         <CodeExample />
       </div>
       <div className='w-full flex items-center justify-center gap-12 z-50 mt-32' id='proxies'>
-        <div className='bg-white/10 rounded-full px-8 py-4 border border-white/20 cursor-pointer transition-colors duration-200'>
+        <div className='bg-white/10 rounded-full px-2 py-1 lg:px-8 lg:py-4 border border-white/20 cursor-pointer transition-colors duration-200'>
           PROXY
         </div>
-        <div className='bg-white/10 rounded-full px-8 py-4 border border-white/20 cursor-pointer transition-colors duration-200'>
+        <div className='bg-white/10 rounded-full px-2 py-1 lg:px-8 lg:py-4 border border-white/20 cursor-pointer transition-colors duration-200'>
           API
         </div>
       </div>
       <div className='w-full flex items-center justify-center gap-32 z-50 mt-32'>
-        <div className='relative'>
+        <div className='hidden lg:block relative'>
           <Image
             src={blur_rect_planet}
             alt="blur rect planet"
           />
           <div className='absolute top-0 translate-y-2/3 left-0 w-full h-2/3 bg-gradient-to-br from-white/20 to-50% to-transparent stop backdrop-blur-md'></div>
         </div>
-        <div className='flex flex-col p-4 gap-12 w-fit'>
-          <span className='text-[3.5rem] font-light w-[44rem] leading-[125%]'>
+        <div className='flex flex-col p-4 gap-12 w-full lg:w-fit'>
+          <span className='text-2xl lg:text-[3.5rem] font-light w-fit lg:w-[44rem] leading-[125%]'>
             POWER UP YOUR SCRAPERS WITH OUR PROXY INFRASTRUCTURE
           </span>
-          <span className='text-2xl font-light w-[44rem] leading-[125%]'>
+          <span className='text-lg lg:text-2xl font-light w-fit lg:w-[44rem] leading-[125%]'>
             Utilize one of the most reliable and largest proxy services in the market, covering 195 countries globally:
           </span>
-          <ul className='text-2xl font-light w-[44rem] leading-[125%] list-disc'>
+          <ul className='text-lg lg:text-2xl font-light w-fit lg:w-[44rem] leading-[125%] list-disc'>
             <li>
               World leading pool of 100M+ Residential Proxies backed by patented technology
             </li>
@@ -96,22 +96,22 @@ export default function Home() {
         </div>
         </div>
       </div>
-      <div className='w-full max-w-7xl mx-auto flex justify-between pt-32' id='pricing'>
-        <div className='flex flex-col items-center justify-between gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-16 relative'>
+      <div className='w-full max-w-7xl mx-auto flex flex-col lg:flex-row  gap-4 lg:gap-0 justify-between pt-32' id='pricing'>
+        <div className='flex flex-col items-center justify-between gap-4 lg:gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-8 lg:p-16 relative'>
           <div className='bg-white/20 w-1/4 aspect-square rounded-full absolute top-1/2 left-1/3 -z-50 blur-3xl'></div>
-          <span className='text-2xl font-bold'>
+          <span className='text-lg lg:text-2xl font-bold'>
             FREE
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             1000 FREE API Calls
           </span>
-          <span className='text-xl'> 
+          <span className='text-base lg:text-xl'> 
             1000 FREE Proxies
           </span>
-          <span className='text-xl'>  
+          <span className='text-base lg:text-xl'>  
             1000 FREE Scraping Minutes
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             24/7 Support
           </span>
           <div className='rounded-full px-8 py-4 cursor-pointer text-center w-full' style={{
@@ -120,21 +120,21 @@ export default function Home() {
             $0 / Month
           </div>
         </div>
-        <div className='flex flex-col items-center justify-between gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-16 relative'>
+        <div className='flex flex-col items-center justify-between gap-4 lg:gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-8 lg:p-16 relative'>
           <div className='bg-white/20 w-1/4 aspect-square rounded-full absolute top-1/2 left-1/3 -z-50 blur-3xl'></div>
-          <span className='text-2xl font-bold'>
+          <span className='text-lg lg:text-2xl font-bold'>
             PRO
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             10000 API Calls
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             1000 FREE Proxies
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             UNLIMITED Scraping Minutes
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             24/7 Support
           </span>
           <div className='rounded-full px-8 py-4 cursor-pointer text-center w-full' style={{
@@ -143,18 +143,18 @@ export default function Home() {
             $28 / Month
           </div>
         </div>
-        <div className='flex flex-col items-center justify-between gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-16 relative'>
+        <div className='flex flex-col items-center justify-between gap-4 lg:gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-8 lg:p-16 relative'>
           <div className='bg-white/20 w-1/4 aspect-square rounded-full absolute top-1/2 left-1/3 -z-50 blur-3xl'></div>
-          <span className='text-2xl font-bold'>
+          <span className='text-lg lg:text-2xl font-bold'>
             PREMIUM
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             UNLIMITED API Calls
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             UNLIMITED Proxies
           </span>
-          <span className='text-xl'>
+          <span className='text-base lg:text-xl'>
             UNLIMITED Scraping Minutes
           </span>
           <span className='text-xl'>
@@ -168,7 +168,7 @@ export default function Home() {
         </div>
       </div>
       <div className='w-full px-8 p-3 flex flex-col gap-12 items-center justify-center z-50 max-w-7xl' id='solutions'>
-        <div className='w-full grid grid-cols-3 items-center justify-center gap-12 z-50 mt-32'>
+        <div className='w-full grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-12 z-50 mt-32'>
           <div className='flex flex-col items-start justify-between gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-16 aspect-square relative'>
             <div className='bg-white/20 w-1/4 aspect-square rounded-full absolute top-1/2 left-1/3 -z-50 blur-3xl'></div>
             <div className='w-16'>
@@ -242,7 +242,7 @@ export default function Home() {
             </svg>
           </div>
         </div>
-        <div className='w-full grid grid-cols-3 items-center justify-center gap-12 z-50'>
+        <div className='w-full grid grid-cols-1 lg:grid-cols-3 items-center justify-center gap-12 z-50'>
           <div className='flex flex-col gap-12 h-full'>
             <div className='flex items-center justify-between gap-8 bg-white/5 backdrop-blur-xl border border-white/20 rounded-[5.4rem] p-8 h-1/2 relative'>
               <div className='bg-white/20 w-1/4 aspect-square rounded-full absolute top-1/2 left-1/3 -z-50 blur-3xl'></div>
